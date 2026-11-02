@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --brand-yellow: #FDC435;
+    --bg-gray: #F9FAFF;
+    --bg-white: #FFFFFF;
+    --bg-line: #25282b;
+    --bordeer-gray: #E8ECF4;
+    --font-high-emphasis: #252828;
+    --font-low-emphasis: #9A9FAB;
+    --font-black: #333333;
+    --size-basee: 4px;
+    --conteent-width-max: 1200px;
+}
+
+* {
+  box-sizing: border-box; 
+}
+
+html {
+    font-size: 4px;
+}
+body {
+    font-size: 4rem;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0;
+}
+
+/*1) Размечаем layout */
+/*2) Размечаем отступы */
+/*3) Размечаем размеры */
+/*4) Размечаем цвета, шрифты и декоративные элименты */
+
+.page {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    position: relative;
+}
+
+.page__content {
+    display: flex;
+    flex-direction: column;
+
+    padding: calc(var(--size-base)*28) 0 calc(var(--size-base)*60);
+    row-gap: calc(var(--size-base)*36);
+
+    width: 100%;
+    max-width: var(--conteent-width-max);
+
+    position: relative;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: calc(var(--size-base)*3.5) 0;
+
+    width: 100%;
+
+    position: absolute;
+}
+
+.nav  {
+    display: flex;
+    align-items: center;
+
+    column-gap: calc(var(--size-base)*12);
+}
+
+.section__label {
+    margin-bottom: calc(var(--size-base)*3);
+}
+
+.title_h1 {
+    margin-bottom: calc(var(--size-base)*8);
+}
+
+.first-display__descr {
+    margin-bottom: calc(var(--size-base)*8);
+}
+
+.first-display__content {
+    display: flex;
+    flex-direction: column;
+
+    max-width: calc(var(--size-base)*121.5);
+}
+
+.first-display__actions {
+    display: flex;
+
+    columns: calc(var(--size-base)*12);
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+
+    row-gap: calc(var(--size-base)*20);
+}
+
+.projects__list {
+    display: flex;
+    flex-direction: column;
+
+    row-gap: calc(var(--size-base)*20);
+
+    max-width: calc(var(--size-base)*248);
+}
+
+.card {
+    display: flex;
+
+    width: 100%;
+    max-width: calc(var(--size-base)*248);
+    max-height: calc(var(--size-base)*131);
+}
+
+.card__content {
+    flex-direction: column;
+
+    padding: calc(var(--size-base)*12);
+
+    row-gap: calc(var(--size-base)*6);
+}
+
+.btn {
+    padding: calc(var(--size-base)*2) calc(var(--size-base)*6);
+}
+
+.card_direction_reverse {
+    flex-direction: row-reverse;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+
+    row-gap: calc(var(--size-base)*20);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+
+    row-gap: calc(var(--size-base)*6);
+}
+
+.form_field {
+    row-gap: calc(var(--size-base)*2);
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+
+    row-gap: calc(var(--size-base)*8);
+}
+
+.socials {
+    display: flex;
+
+    row-gap: calc(var(--size-base)*6);
+}
+
